@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Datos from './Datos'
 
-function App() {
+
+
+ /*  Creamos un modulo */
+
+const Description = () => {
+  return <h2>Esta es una descripcion</h2>
+}
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/*  utilizamos los modulos creados */}
+     <Datos nombre='Juan' age={20 + 50} />
+     <Datos nombre='Lucas' age='25' />
     </div>
   );
 }
